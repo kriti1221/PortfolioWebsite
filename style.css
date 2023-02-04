@@ -192,7 +192,7 @@ section .title::after {
 
 .home {
     display: flex;
-    background: url("/black.gif") no-repeat center;
+    background: url("./black.gif") no-repeat center;
     height: 100vh;
     min-height: 500px;
     color: white;
@@ -642,7 +642,7 @@ section .title::after {
     }
 
     .menu-btn i.active:before {
-        content: "\fOOd";
+        content: "close";
     }
 
     .navbar .menu {
