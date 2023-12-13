@@ -104,15 +104,6 @@
                         <p>percentage-89.2%</p>
                     </div>
                 </div>
-                <!-- <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">High School</div>
-                        <p>X th from Little Angels Sr. Sec. School(CBSE),Sonipat</p>
-                        <br>
-                        <p>CGPA-9.0</p>
-                    </div>
-                </div> -->
             </div>
         </div>
         </div>
@@ -279,7 +270,7 @@
                             <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <!-- <div class="button-area">
-                            <button type="submit" onclick="sendEmail()">Send message</button>
+                            <button type="submit" onclick="sendMail()">Send message</button>
                         </div> -->
                     </form>
                 </div>
@@ -287,6 +278,34 @@
         </div>
     </section>
     <script src="script.js"></script>
+    <!-- <script>
+        async function sendMail() {
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: 'kg819687@gmail.com',
+                    pass: 'cwqx gniw lnrs idwh',
+                },
+            });
+
+            const mailOptions = {
+                from: 'kg819687@gmail.com', // sender address
+                to: "kriti.jindal.37@gmail.com", // list of receivers
+                subject: "Welcome to MY portfolio", // Subject line
+                text: "this is a nodemailer mail", // plain text body
+                html: "<b>Thanks for connecting</b>", // html body
+            };
+
+            try {
+                const result = await transporter.sendMail(mailOptions);
+                console.log('Email sent successfully ');
+            }
+            catch (err) {
+                console.log('email sent failed' + err);
+            }
+        }
+        sendMail();
+    </script> -->
 </body>
 
 </html>

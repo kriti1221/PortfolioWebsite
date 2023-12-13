@@ -1,3 +1,4 @@
+const nodemailer = require("nodemailer");
 $(document).ready(function () {
     $(window).scroll(function () {
         // sticky navbar on scroll script
@@ -66,18 +67,46 @@ $(document).ready(function () {
     });
 });
 
-function sendEmail() {
-    console.log("sending mail!")
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "kriti.jindal.37@gmail.com",
-        Password: "#Kriti1221",
-        To: "kriti.jindal.37@gmail.com",
-        From: "rajeshgupta160086@gmail.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
-}
+// function sendEmail() {
+//     console.log("sending mail!")
+//     Email.send({
+//         Host: "smtp.gmail.com",
+//         Username: "kriti.jindal.37@gmail.com",
+//         Password: "#Kriti1221",
+//         To: "kriti.jindal.37@gmail.com",
+//         From: "rajeshgupta160086@gmail.com",
+//         Subject: "Sending Email using javascript",
+//         Body: "Well that was easy!!",
+//     })
+//         .then(function (message) {
+//             alert("mail sent successfully")
+//         });
+// }
+
+// async function sendMail() {
+//     const transporter = nodemailer.createTransport({
+//         service: 'gmail',
+//         auth: {
+//             user: 'kg819687@gmail.com',
+//             pass: 'cwqx gniw lnrs idwh',
+//         },
+//     });
+
+//     const mailOptions = {
+//         from: 'kg819687@gmail.com', // sender address
+//         to: "kriti.jindal.37@gmail.com", // list of receivers
+//         subject: "Welcome to node js app", // Subject line
+//         text: "this is a nodemailer mail", // plain text body
+//         html: "<b>Thanks for connecting</b>", // html body
+//     };
+
+//     try {
+//         const result = await transporter.sendMail(mailOptions);
+//         console.log('Email sent successfully ');
+//     }
+//     catch (err) {
+//         console.log('email sent failed' + err);
+//     }
+// }
+
+// sendMail();
